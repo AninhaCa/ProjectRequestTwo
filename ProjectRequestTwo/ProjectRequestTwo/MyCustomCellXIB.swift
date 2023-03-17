@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MyCustomCellXIB: UITableViewCell {
 
+    @IBOutlet var imagePizza: UIImageView!
+    @IBOutlet var labelPizza: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,4 +24,7 @@ class MyCustomCellXIB: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setup(pizzaElement: PizzaElement?) {
+        labelPizza.text = pizzaElement?.name ?? ""
+    }
 }
