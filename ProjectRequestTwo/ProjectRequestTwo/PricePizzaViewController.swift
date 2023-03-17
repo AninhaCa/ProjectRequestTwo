@@ -31,6 +31,7 @@ class PricePizzaViewController: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
+        buttonBack.backgroundColor = .black
         self.dismiss(animated: true)
         
     }
@@ -38,6 +39,7 @@ class PricePizzaViewController: UIViewController {
     @IBAction func assessment(_ sender: Any) {
         if let ratingScreean = self.storyboard?.instantiateViewController(identifier: "threeRating") as? RatingPizzaViewController {
             ratingScreean.ratingPizza = self.pricePizza
+            buttonAssessment.backgroundColor = .black
             self.present(ratingScreean, animated: true)
         }
     }

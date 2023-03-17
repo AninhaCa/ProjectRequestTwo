@@ -26,6 +26,7 @@ class RatingPizzaViewController: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
+        buttonBack.backgroundColor = .black
         self.dismiss(animated: true)
     }
 }
