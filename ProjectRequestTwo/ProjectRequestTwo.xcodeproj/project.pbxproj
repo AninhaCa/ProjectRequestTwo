@@ -16,6 +16,7 @@
 		77C20B3B29C3ED39005A2671 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C20B3A29C3ED39005A2671 /* Pizza.swift */; };
 		77C20B3E29C3F257005A2671 /* MyCustomCellXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C20B3C29C3F257005A2671 /* MyCustomCellXIB.swift */; };
 		77C20B3F29C3F257005A2671 /* MyCustomCellXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C20B3D29C3F257005A2671 /* MyCustomCellXIB.xib */; };
+		77C20B4129C3F835005A2671 /* PricePizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C20B4029C3F835005A2671 /* PricePizzaViewController.swift */; };
 		8AEE873DD7A26AC9B12D246E /* Pods_ProjectRequestTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF1B81128DD65FA5F8EE019 /* Pods_ProjectRequestTwo.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		77C20B3A29C3ED39005A2671 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		77C20B3C29C3F257005A2671 /* MyCustomCellXIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCellXIB.swift; sourceTree = "<group>"; };
 		77C20B3D29C3F257005A2671 /* MyCustomCellXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCellXIB.xib; sourceTree = "<group>"; };
+		77C20B4029C3F835005A2671 /* PricePizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricePizzaViewController.swift; sourceTree = "<group>"; };
 		E69A580AC6589CB15119AA40 /* Pods-ProjectRequestTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectRequestTwo.debug.xcconfig"; path = "Target Support Files/Pods-ProjectRequestTwo/Pods-ProjectRequestTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 				778AD78F29C28CA800875A0D /* SceneDelegate.swift */,
 				77C20B3A29C3ED39005A2671 /* Pizza.swift */,
 				778AD79129C28CA800875A0D /* ViewController.swift */,
+				77C20B4029C3F835005A2671 /* PricePizzaViewController.swift */,
 				77C20B3C29C3F257005A2671 /* MyCustomCellXIB.swift */,
 				77C20B3D29C3F257005A2671 /* MyCustomCellXIB.xib */,
 				778AD79329C28CA900875A0D /* Main.storyboard */,
@@ -220,6 +223,7 @@
 				778AD79229C28CA800875A0D /* ViewController.swift in Sources */,
 				778AD78E29C28CA800875A0D /* AppDelegate.swift in Sources */,
 				778AD79029C28CA800875A0D /* SceneDelegate.swift in Sources */,
+				77C20B4129C3F835005A2671 /* PricePizzaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
