@@ -13,9 +13,12 @@
 		778AD79529C28CA900875A0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778AD79329C28CA900875A0D /* Main.storyboard */; };
 		778AD79729C28CAB00875A0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778AD79629C28CAB00875A0D /* Assets.xcassets */; };
 		778AD79A29C28CAB00875A0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778AD79829C28CAB00875A0D /* LaunchScreen.storyboard */; };
+		8AEE873DD7A26AC9B12D246E /* Pods_ProjectRequestTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF1B81128DD65FA5F8EE019 /* Pods_ProjectRequestTwo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E624DB89847D9A5D5515424 /* Pods-ProjectRequestTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectRequestTwo.release.xcconfig"; path = "Target Support Files/Pods-ProjectRequestTwo/Pods-ProjectRequestTwo.release.xcconfig"; sourceTree = "<group>"; };
+		4FF1B81128DD65FA5F8EE019 /* Pods_ProjectRequestTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectRequestTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		778AD78A29C28CA800875A0D /* ProjectRequestTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectRequestTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778AD78D29C28CA800875A0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		778AD78F29C28CA800875A0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		778AD79629C28CAB00875A0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		778AD79929C28CAB00875A0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		778AD79B29C28CAB00875A0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E69A580AC6589CB15119AA40 /* Pods-ProjectRequestTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectRequestTwo.debug.xcconfig"; path = "Target Support Files/Pods-ProjectRequestTwo/Pods-ProjectRequestTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AEE873DD7A26AC9B12D246E /* Pods_ProjectRequestTwo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		376452703D7AE47343BC1168 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FF1B81128DD65FA5F8EE019 /* Pods_ProjectRequestTwo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		778AD78129C28CA800875A0D = {
 			isa = PBXGroup;
 			children = (
 				778AD78C29C28CA800875A0D /* ProjectRequestTwo */,
 				778AD78B29C28CA800875A0D /* Products */,
+				FFC50E75188C1363C7257A31 /* Pods */,
+				376452703D7AE47343BC1168 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = ProjectRequestTwo;
 			sourceTree = "<group>";
 		};
+		FFC50E75188C1363C7257A31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E69A580AC6589CB15119AA40 /* Pods-ProjectRequestTwo.debug.xcconfig */,
+				2E624DB89847D9A5D5515424 /* Pods-ProjectRequestTwo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 778AD79E29C28CAB00875A0D /* Build configuration list for PBXNativeTarget "ProjectRequestTwo" */;
 			buildPhases = (
+				35028B9E2192DF8095C4E730 /* [CP] Check Pods Manifest.lock */,
 				778AD78629C28CA800875A0D /* Sources */,
 				778AD78729C28CA800875A0D /* Frameworks */,
 				778AD78829C28CA800875A0D /* Resources */,
+				73D6697E6115AA9A28F22F0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35028B9E2192DF8095C4E730 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProjectRequestTwo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73D6697E6115AA9A28F22F0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectRequestTwo/Pods-ProjectRequestTwo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectRequestTwo/Pods-ProjectRequestTwo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProjectRequestTwo/Pods-ProjectRequestTwo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		778AD78629C28CA800875A0D /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		778AD79F29C28CAB00875A0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E69A580AC6589CB15119AA40 /* Pods-ProjectRequestTwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		778AD7A029C28CAB00875A0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E624DB89847D9A5D5515424 /* Pods-ProjectRequestTwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
