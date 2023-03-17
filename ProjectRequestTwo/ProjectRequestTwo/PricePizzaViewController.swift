@@ -31,11 +31,14 @@ class PricePizzaViewController: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true)
         
     }
     
     @IBAction func assessment(_ sender: Any) {
-        
+        if let ratingScreean = self.storyboard?.instantiateViewController(identifier: "threeRating") as? RatingPizzaViewController {
+            ratingScreean.ratingPizza = self.pricePizza
+            self.present(ratingScreean, animated: true)
+        }
     }
 }
