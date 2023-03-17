@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class PricePizzaViewController: UIViewController {
 
@@ -21,10 +22,16 @@ class PricePizzaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        labelName.text = pricePizza?.name
+        labelP.text = "PEQUENA - R$\(pricePizza?.priceP ?? 0)"
+        labelM.text = "MÉDIA - R$\(pricePizza?.priceM ?? 0)"
+        labelG.text = "GRANDE - R$\(pricePizza?.priceG ?? 0) "
+        let urlImage = URL(string: pricePizza?.imageURL ?? "")
+        imagePrice.sd_setImage(with: urlImage)
     }
     
     @IBAction func back(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
         
     }
     
