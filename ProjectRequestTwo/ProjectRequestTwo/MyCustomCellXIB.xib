@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,25 +17,45 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="204"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YEO-H2-0hZ">
-                        <rect key="frame" x="40" y="0.0" width="240" height="128"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-fr-5cb">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-fr-5cb">
                         <rect key="frame" x="16" y="172" width="288" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="288" id="JEO-Ox-cej"/>
+                            <constraint firstAttribute="height" constant="21" id="Q7T-Xg-Ve0"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YEO-H2-0hZ">
+                        <rect key="frame" x="16" y="0.0" width="288" height="164"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="164" id="7xC-Hn-CIf"/>
+                            <constraint firstAttribute="width" constant="288" id="Z1b-dx-NfB"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
+                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                <constraints>
+                    <constraint firstItem="YEO-H2-0hZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BnL-wb-Iid"/>
+                    <constraint firstItem="YEO-H2-0hZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="E2U-eF-Axo"/>
+                    <constraint firstItem="dHS-fr-5cb" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="KiB-Nl-XRe"/>
+                    <constraint firstAttribute="trailing" secondItem="YEO-H2-0hZ" secondAttribute="trailing" constant="16" id="P3M-sM-407"/>
+                    <constraint firstItem="dHS-fr-5cb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="faB-wv-amf"/>
+                    <constraint firstItem="dHS-fr-5cb" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="pLX-A5-pdL"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="imagePizza" destination="YEO-H2-0hZ" id="Zeo-7g-AUy"/>
                 <outlet property="labelPizza" destination="dHS-fr-5cb" id="l5E-Jz-lNt"/>
             </connections>
-            <point key="canvasLocation" x="-4" y="-48"/>
+            <point key="canvasLocation" x="-4.3478260869565224" y="-48.214285714285715"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
