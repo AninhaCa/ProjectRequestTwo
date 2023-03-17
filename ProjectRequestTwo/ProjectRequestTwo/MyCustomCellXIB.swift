@@ -26,5 +26,7 @@ class MyCustomCellXIB: UITableViewCell {
     
     func setup(pizzaElement: PizzaElement?) {
         labelPizza.text = pizzaElement?.name ?? ""
+        let urlImage = URL(string: pizzaElement?.imageURL ?? "")
+        imagePizza.sd_setImage(with: urlImage)
     }
 }
